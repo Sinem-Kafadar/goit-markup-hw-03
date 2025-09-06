@@ -3,25 +3,70 @@ body {
   color: #2e2f42;
 }
 
+h1,
+h2,
+h3,
+p,
 ul {
-  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-h3 {
-  color: #2e2f42;
-  font-weight: 500;
-  font-size: 20px;
-  letter-spacing: 0.02em;
+
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
+
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.1;
+  color: #ffffff;
+  letter-spacing: 2%;
+  text-align: center;
+}
+
 h2 {
   color: #2e2f42;
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.02em;
+  text-align: center;
 }
+
+h3 {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 2, 5;
+}
+
 .web-logo,
 .web-logo-2 {
   color: #4d5ae5;
   line-height: 1.16;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+.footer-web {
+  color: #4d5ae5;
+  line-height: 1.16;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.footer-studio {
+  color: #f4f4fd;
+  line-height: 1.16;
+  font-size: 18px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -32,9 +77,6 @@ h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 0.03em;
-}
-.our-team {
-  background-color: #f4f4fd;
 }
 
 .footer {
@@ -66,8 +108,33 @@ h2 {
   color: #404bbf;
 }
 .hero-page {
+  display: flex;
+  /* Flexbox kullanımı */
   background-color: #2e2f42;
+  justify-content: center;
+  /* Dikey ortalama */
+  align-items: center;
+  /* Yatay ortalama */
+  flex-direction: column;
+  /* Dikey hizalama */
+  gap: 20px;
+  /* Elemanlar arası boşluk */
+  line-height: 2.5;
+  margin: 0 auto;
+  /* Ortalamak için */
+  width: 1440px;
+  /* Genişlik 1440px */
+  height: 600px;
+  text-align: center;
 }
+
+.hero-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .page-title {
   color: #ffffff;
   font-weight: 700;
@@ -77,13 +144,23 @@ h2 {
   padding: 188px;
 }
 .button {
-  background-color: #4d5ae5;
-  cursor: pointer;
-  padding: 16px 32px;
-  border-radius: 4px;
-  margin-left: 636px;
+  width: 169px;
+  height: 56px;
   margin-top: 48px;
-  margin-bottom: 188px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  gap: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0px 2px 1px #2e2f42;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 4%;
+  vertical-align: middle;
 }
 .button:hover,
 .button:focus {
@@ -99,11 +176,26 @@ h2 {
   font-weight: 500;
   letter-spacing: 0.04em;
 }
+.our-team li {
+  list-style: none;
+}
 .team {
   background-color: #f4f4fd;
 }
 .team-section {
   background-color: #ffffff;
+}
+.our-team {
+  background-color: #f4f4fd;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  weight: 1440px;
+  height: 732px;
+}
+.team-full-cards {
+  display: flex;
 }
 .portfolio-functions,
 .team-position,
@@ -133,10 +225,46 @@ h2 {
 }
 
 .page-header {
-  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 312px) max-width 1440px;
+  height: 72px;
   border-bottom: 1px solid #e7e9fc;
   padding: 25.5px 156px 25.5px 156px;
   align-items: center;
+  margin: 0 auto;
+}
+
+.page-header-full {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+  height: 72px;
+  margin: 0 auto;
+}
+
+.page-header-logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 76px;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 24px;
+}
+
+.sayfa-genel {
+  width: 1440px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .page-nav,
@@ -190,12 +318,9 @@ h2 {
 }
 
 .portfolio-container {
-  display:flex;
   padding: 32px;
   padding-left: 16px;
-}
-
-  display: flex {
+  display: flex;
   flex-direction: column;
   gap: 8px;
   border-bottom: 1px solid #e7e9fc;
@@ -211,9 +336,13 @@ h2 {
 }
 
 .container {
-  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 .order-button {
@@ -224,12 +353,4 @@ h2 {
 
 .button-hover {
   background-color: #404bbf;
-}
-
-.button-text {
-  color: #ffffff;
-  line-height: 1.5;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
 }
