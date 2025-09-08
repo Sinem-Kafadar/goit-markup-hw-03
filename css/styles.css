@@ -227,7 +227,6 @@ h3 {
 .page-header {
   justify-content: space-between;
   width: calc(100% - 312px) max-width 1440px;
-  height: 72px;
   border-bottom: 1px solid #e7e9fc;
   padding: 25.5px 156px 25.5px 156px;
   align-items: center;
@@ -240,7 +239,7 @@ h3 {
   justify-content: space-between;
   width: 100%;
   max-width: 1440px;
-  height: 72px;
+  padding:24px 0;
   margin: 0 auto;
 }
 
@@ -336,13 +335,9 @@ h3 {
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  width: 1440px;
 }
 
 .order-button {
