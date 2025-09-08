@@ -113,19 +113,9 @@ h3 {
   background-color: #2e2f42;
   justify-content: center;
   /* Dikey ortalama */
-  align-items: center;
-  /* Yatay ortalama */
-  flex-direction: column;
-  /* Dikey hizalama */
-  gap: 20px;
   /* Elemanlar arası boşluk */
   line-height: 2.5;
-  margin: 0 auto;
-  /* Ortalamak için */
-  width: 1440px;
-  /* Genişlik 1440px */
   height: 600px;
-  text-align: center;
 }
 
 .hero-text {
@@ -191,8 +181,6 @@ h3 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  weight: 1440px;
-  height: 732px;
 }
 .team-full-cards {
   display: flex;
@@ -237,10 +225,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  max-width: 1440px;
-  padding:24px 0;
-  margin: 0 auto;
+  padding: 24px 0;
 }
 
 .page-header-logo {
@@ -335,8 +320,7 @@ h3 {
 }
 
 .container {
-  margin-left: 0 auto;
-  margin-right: 0 auto;
+  margin: 0 auto;
   width: 1440px;
 }
 
